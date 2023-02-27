@@ -5,7 +5,7 @@ EXE_NAME="a.out"
 EXEC_PATH=""
 
 _load_payload() {
-    tar -cjf - $1 | base64 | fold >> $0
+    tar -cjf - $1 | base64 | fold >>$0
 }
 
 _decompress_payload() {
